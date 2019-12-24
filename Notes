@@ -1,0 +1,19 @@
+-> Cold HDD is used for throughput-oriented storage.It is applicable for infrequently access data. It is not used for boot volume.
+This is the lowest cost HDD volume type. 
+-> Throughput Optimized HDD (st1) Data warehouses and log-processing. Not use for boot volume.
+-> You can use a single ALB and bind multiple SSL certificates to the same listener.
+-> The ALB supports IP address as a target.
+-> The CLB does not support IP addresses as targets.
+-> You can enable access logs on the ALB and this will provide the information required including requester, IP, and request type.
+Access logs are not enabled by default. You can optionally store and retain the log files on S3.
+-> A CNAME record can’t be used for resolving apex or naked domain names.
+-> An Alias record can be used for resolving apex or naked domain names (e.g. example.com).
+-> Amazon RedShift Enhanced VPC routing forces all COPY and UNLOAD traffic between clusters and data repositories through a VPC.
+-> RPO (Recovery Point Objective) : the acceptable data loss.
+-> RTO (Recovery Time Objective)  : the time in future that your application can be live.
+-> S3 Glacier Deep Archive: Lowest cost of all S3 storage methods. Data can be restored in 12 hours.
+
+
+
+
+
