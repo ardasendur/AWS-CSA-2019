@@ -12,6 +12,9 @@ Access logs are not enabled by default. You can optionally store and retain the 
 -> RPO (Recovery Point Objective) : the acceptable data loss.
 -> RTO (Recovery Time Objective)  : the time in future that your application can be live.
 -> S3 Glacier Deep Archive: Lowest cost of all S3 storage methods. Data can be restored in 12 hours.
+-> It is a best practice is to deploy Linux bastion hosts in two AZs, use Auto Scaling (set to 1 to just replace)and
+Elastic IP addresses.
+
 
 
 
