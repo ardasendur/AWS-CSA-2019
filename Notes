@@ -72,6 +72,23 @@ Default interfaces are terminated with instance termination. Manually added inte
 - S3 pre-signed URLS can be used to provide temporary access to specific object to those who do not have AWS credential.
 - For DynamoDB default evantaul consistency.This may result in stale data being returned in some cases.
 You can request strongly consistent ready by using SDK parameter.You cannot disable eventual consistency, it is default for all tables.
+- Proxy protocol for TCP/SSL carries the source (client) IP/port information
+- X-forwarded-for for HTTP/HTTPS carries the source IP/port information
+- The new Amazon Data Lifecycle Manager (DLM) feature automates the creation, retention,
+and deletion of EBS snapshots but not the individual files within an EBS volume.
+- You cannot use a resource-based ACL with IAM policy as this configuration does not support conditional statements.
+- DynamoDB is more effective for heacy workloads.
+- DynamoDD pricing is baed on throughput(read/write) regardless of whether you use it or not.
+- When the launch configuration is created from the CLI detailed monitoring of EC2 instances is enabled by default
+- Basic monitoring is enabled by default if the ASG is created frm the console.
+- RedShift always keeps three copies of your data and provides continuous/incremental backups
+- Single-node clusters do not support data replication
+
+
+ 
+
+
+
 
 
 
