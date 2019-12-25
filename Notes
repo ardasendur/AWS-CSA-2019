@@ -1,19 +1,77 @@
--> Cold HDD is used for throughput-oriented storage.It is applicable for infrequently access data. It is not used for boot volume.
+- Cold HDD is used for throughput-oriented storage.It is applicable for infrequently access data. It is not used for boot volume.
 This is the lowest cost HDD volume type. 
--> Throughput Optimized HDD (st1) Data warehouses and log-processing. Not use for boot volume.
--> You can use a single ALB and bind multiple SSL certificates to the same listener.
--> The ALB supports IP address as a target.
--> The CLB does not support IP addresses as targets.
--> You can enable access logs on the ALB and this will provide the information required including requester, IP, and request type.
+- Throughput Optimized HDD (st1) Data warehouses and log-processing. Not use for boot volume.
+- You can use a single ALB and bind multiple SSL certificates to the same listener.
+- The ALB supports IP address as a target.
+- The CLB does not support IP addresses as targets.
+- You can enable access logs on the ALB and this will provide the information required including requester, IP, and request type.
 Access logs are not enabled by default. You can optionally store and retain the log files on S3.
--> A CNAME record can’t be used for resolving apex or naked domain names.
--> An Alias record can be used for resolving apex or naked domain names (e.g. example.com).
--> Amazon RedShift Enhanced VPC routing forces all COPY and UNLOAD traffic between clusters and data repositories through a VPC.
--> RPO (Recovery Point Objective) : the acceptable data loss.
--> RTO (Recovery Time Objective)  : the time in future that your application can be live.
--> S3 Glacier Deep Archive: Lowest cost of all S3 storage methods. Data can be restored in 12 hours.
--> It is a best practice is to deploy Linux bastion hosts in two AZs, use Auto Scaling (set to 1 to just replace)and
+- A CNAME record can’t be used for resolving apex or naked domain names.
+- An Alias record can be used for resolving apex or naked domain names (e.g. example.com).
+- Amazon RedShift Enhanced VPC routing forces all COPY and UNLOAD traffic between clusters and data repositories through a VPC.
+- RPO (Recovery Point Objective) : the acceptable data loss.
+- RTO (Recovery Time Objective)  : the time in future that your application can be live.
+- S3 Glacier Deep Archive: Lowest cost of all S3 storage methods. Data can be restored in 12 hours.
+- It is a best practice is to deploy Linux bastion hosts in two AZs, use Auto Scaling (set to 1 to just replace)and
 Elastic IP addresses.
+- Whenever you  have launched EC2 Classic, the private IPv4 is released, instance is stopped or terminated.
+- Whenever you have launched  EC2 in VPC , the private IPv4 is remains, instance is stopped or terminated.
+- By default an instance only has a single private IP address.
+- Security groups are stateful, do not need a rule for outbound traffic.
+-	RDS read replicas cannot be created from EC2 instances.
+-	RAID 0  : data is written multiple disk and increase performance not redundancy
+-	RADI 1 : mirroring  data, only redundancy not performance
+-	EFS uses the NFSv4.1 protocol.
+-	EFS offers ability to encrypt  data at rest and in transit.
+-	DynamoDB and Kinesis are both used for streaming data
+-	AWS Database Migration Service helps you migrate databases to AWS quickly and securely
+-	AWS Glue is fully manages ETL services to prepare and load data for analytics
+-	Redshift is columnar data warehouse DD which is suitable for long complex query.
+-	RDS may be good fit for fast queries (not for complex query)
+-	ElastiCache in front of the RedShift DB(use case)
+-	Kinesis Data Firehose is easiest way to load streaming data into data store and analytics tools.
+-	The proxy protocol headers helps you identitfy the Ip address of a client when you have a load balancer that uses TCP for back end connection
+-	A user pool is a user directory in Amazon Cognito. With a user pool, your user can sign in to you web or mobile app through Amazon Cognito.
+-	Amazon Work Spaces is a managed, secure cloud desktop service.
+-	Amazon Inspector is an automated security assessment service.
+-	Amazon S3 Transfer acceleration enables fast, easy and secure transfers of file over long distances.
+-	For objects larger than 100 MB use multipart upload. 
+-	Amazon SQS has short polling as a default. Does not wait for messages to appear in the queue.
+-	Amazon SQS long polling uses fewer request and reduces to cost. Eliminates false empty response by querying all servers. 
+SQS wait until a message is available in the queue before sending a response. 
+-	Default security group have allow rules.
+-	Custom security group does not have inbound allow rules.(All inbound traffic is denied by default)
+-	All outbound traffic is allowed in custom and default security group.
+-	Direct Connect is used for connecting on-premise data centers into AWS using private network connection.
+-	If you are installing MySQL on an EC2 instance you cannot enable read replica or multi-AZ.  
+-	In general , when your object size reaches 100 MB, you should use multipart upload instead of uploading the object a single operation. The largest object size can be uploaded a single put is 5 GB.
+-	Aurora DB can scale up 64 TB and Aurora replicas features milliseconds latency. All other RDS engines have a limit of 16 Tib maximum DB size asynchronous replication typically takes second. 
+-	Amazon Aurora Global Database allow to span multiple AWS regions.
+-	Amazon Dynamo DB is fully managed NoSQL (schema-less) database service. Provides two read models: eventually consistent reads (Default) and strongly consistent read.
+-	Amazon Redshift is a relational database service used for analytics.
+-	 Redshift ,EFS and EBS are not valid options for storing Cloudwatch log files. Options for storing log files : CloudWatch logs, centralized logging system (splunk), custom script and store on S3.
+-	AWS CodeStar enables you to quickly develop, build and deploy applications on AWS.
+-	Amazon Neptune is a new product that offers a fully-managed Graph database.
+-	Using Redis AUTH command can improve data security by requiring the user to enter a password before they are granted precision to execute 
+Redis commands on a password-protected Redis server. You cannot use MFA with ElasticCache.
+-	Classic Load Balancer supports health checks on HTTPS, HTTP,TCP and SSL.
+-	Application Load Balancer supports HTTPS and HTTP.
+-	The AWS Simple AD is an Active Directory compatible directory service in cloud. It cannot be used to proxy authentication requests to the on-premise AD.
+-	AD Connector is a directory gateway for redirecting directory requests to your on-premise AD . 
+Ad connector is considered the best choice when you want to use an existing AD service with Aws services.
+-	Launch template enable you to store launch parameters so that you don’t have specify them every time you launch the instance. When you launch an instance using launch template the Amazon EC2 console
+-	Best practice AWS Active Directory Service for Microsoft Active Directory for more than 5000 users.
+-	AWS Glue is an ETL service.
+-	 Redshift Spectrum for the complex query.
+-	You can throttle and monitor requests to protect your backend.
+-	When creating a VPC peering connection with another account you need to enter the account ID and VPC ID from the other account.
+-	By default Eth0 is the only ENI created with an EC2 instance when launched. You can add additional interfaces to EC2 instances.
+Default interfaces are terminated with instance termination. Manually added interfaces are not terminated by default
+- EBS Throughput Optimized HDD use case : Frequently accessed ,throughput intensive workload with large data set 
+(such as Map Reduce,Kafka,log processing, data warehouses,ETL). SSD option more expensive.
+- S3 pre-signed URLS can be used to provide temporary access to specific object to those who do not have AWS credential.
+- For DynamoDB default evantaul consistency.This may result in stale data being returned in some cases.
+You can request strongly consistent ready by using SDK parameter.You cannot disable eventual consistency, it is default for all tables.
 
 
 
