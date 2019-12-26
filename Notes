@@ -83,15 +83,7 @@ and deletion of EBS snapshots but not the individual files within an EBS volume.
 - Basic monitoring is enabled by default if the ASG is created frm the console.
 - RedShift always keeps three copies of your data and provides continuous/incremental backups
 - Single-node clusters do not support data replication
-
-
- 
-
-
-
-
-
-
-
-
-
+- FIFO queues don't support Lambda function triggers.
+- You can associate only one queue with one or more lambda.
+- Monitor SQS queues using AWS CloudWatch.
+- Log SQS Api calls using AWS CloudTrail.
