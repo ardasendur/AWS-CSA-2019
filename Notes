@@ -60,7 +60,7 @@ Redis commands on a password-protected Redis server. You cannot use MFA with Ela
 -	AD Connector is a directory gateway for redirecting directory requests to your on-premise AD . 
 Ad connector is considered the best choice when you want to use an existing AD service with Aws services.
 -	Launch template enable you to store launch parameters so that you don’t have specify them every time you launch the instance. When you launch an instance using launch template the Amazon EC2 console
--	Best practice AWS Active Directory Service for Microsoft Active Directory for more than 5000 users.
+-	Best practice AWS Active Directory Service for Microsoft Active Directory  for more than 5000 users.
 -	AWS Glue is an ETL service.
 -	 Redshift Spectrum for the complex query.
 -	You can throttle and monitor requests to protect your backend.
@@ -87,3 +87,16 @@ and deletion of EBS snapshots but not the individual files within an EBS volume.
 - You can associate only one queue with one or more lambda.
 - Monitor SQS queues using AWS CloudWatch.
 - Log SQS Api calls using AWS CloudTrail.
+- Structed data  Redshift
+- Unstructed data EMR
+- Redshift composed of leader node and compute node.(Leader nodes are free)
+- Compute nodes can be On-demand or Reserved (NO Spot instance)
+- Redshift supoort only single A-Z deployment.
+- Redshift always store at least 3 copies of data.
+- Redshift support automated backups of the data warehouse cluester with 1 day retention period 
+by default. It can be extened max 35 days.Automated backup can be  disabled by setting retention period 0 days.
+- RDS structured data and for OLTP and reporting.
+- Redshift large volumes of structured data and existing BI tools.
+- EMR is processing and transforming unstructed data
+- Automated bakcup RDS, Amazon Redshift
+- Can cache DynamoDB and RDS
