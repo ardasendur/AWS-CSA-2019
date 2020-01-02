@@ -104,3 +104,8 @@ by default. It can be extened max 35 days.Automated backup can be  disabled by s
 - When you create a trail in the AWS Management console, the trail applies to all AWS Regions by default.
 - AWS CloudTrail is an AWS service that helps you enable governance, compliance and operational and risk for auditing of your 
 AWS account.
+- NAT instance must disable EC2 Flag: Source/Destination Check. In simple words , each EC2 instance either sends or receives 
+internet traffic. It means that they can be source or destination. 
+- NAT instace must have Elastic IP.
+- NAT instance should be placed in public subnet.
+
