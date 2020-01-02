@@ -77,10 +77,10 @@ You can request strongly consistent ready by using SDK parameter.You cannot disa
 - The new Amazon Data Lifecycle Manager (DLM) feature automates the creation, retention,
 and deletion of EBS snapshots but not the individual files within an EBS volume.
 - You cannot use a resource-based ACL with IAM policy as this configuration does not support conditional statements.
-- DynamoDB is more effective for heacy workloads.
+- DynamoDB is more effective for heavy workloads.
 - DynamoDD pricing is baed on throughput(read/write) regardless of whether you use it or not.
 - When the launch configuration is created from the CLI detailed monitoring of EC2 instances is enabled by default
-- Basic monitoring is enabled by default if the ASG is created frm the console.
+- Basic monitoring is enabled by default if the ASG is created from the console.
 - RedShift always keeps three copies of your data and provides continuous/incremental backups
 - Single-node clusters do not support data replication
 - FIFO queues don't support Lambda function triggers.
@@ -100,3 +100,7 @@ by default. It can be extened max 35 days.Automated backup can be  disabled by s
 - EMR is processing and transforming unstructed data
 - Automated bakcup RDS, Amazon Redshift
 - Can cache DynamoDB and RDS
+- CloudTrail is enabled by default for newly created AWS account.
+- When you create a trail in the AWS Management console, the trail applies to all AWS Regions by default.
+- AWS CloudTrail is an AWS service that helps you enable governance, compliance and operational and risk for auditing of your 
+AWS account.
