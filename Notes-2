@@ -1,0 +1,11 @@
+- The minimum volume of Throughput optimized HDD is 500 GB.
+- HDD backend volume optimized for large streaming workload where throughput is better performance measure than IOPS. 
+( Throughput - Is the number of bit transferred per sec. i.e.data transferred per sec. Mainly a unit for high data transfer applications like big data hadoop,kafka streaming
+- Glacier retrival options: 
+  - Bulk retrival : 5-12 hours (cheapest option)
+  - Standart retrival: 3-5 hours
+  - Expeditad retrival: 1-5 minutes 
+ - The AWS Certifacte Manager generates SSL certificate in transit , not at rest.
+ - Amazon Redshift Enhanced VPC provides VPC resources access Redshift.
+ - DynamoDB and Elastic-cache is suitable for storing session data.
+ -
