@@ -98,7 +98,7 @@ by default. It can be extened max 35 days.Automated backup can be  disabled by s
 - RDS structured data and for OLTP and reporting.
 - Redshift large volumes of structured data and existing BI tools.
 - EMR is processing and transforming unstructed data
-- Automated bakcup RDS, Amazon Redshift
+- Automated backup RDS, Amazon Redshift
 - Can cache DynamoDB and RDS
 - CloudTrail is enabled by default for newly created AWS account.
 - When you create a trail in the AWS Management console, the trail applies to all AWS Regions by default.
