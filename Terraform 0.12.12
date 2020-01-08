@@ -1,0 +1,16 @@
+ New Functionality of 0.12.12 Terraform:
+  - No more string interpolation for attributes
+  - 'For' loop expressions and splat operators.
+  - Dynamic blocks (Example usage: Ingress rules and engress rule)
+  
+Splat Expressions:
+ - > If var.list is list of objects and all have id attribute.
+ - > [for o in var.list : o.id] equivalent splat expression var.list[*].id
+ 
+ 
+ 
+You can use "tfswitch" command to use latest version for Linux.
+- terraform state list : list of resources
+- terraform state show :                                             
+- terraform init : command used to initiliaze a working directory containg Terraform  config file.
+- terraform get  : command used to download or update modulues.
