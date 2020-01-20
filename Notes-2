@@ -8,4 +8,5 @@
  - The AWS Certifacte Manager generates SSL certificate in transit , not at rest.
  - Amazon Redshift Enhanced VPC provides VPC resources access Redshift.
  - DynamoDB and Elastic-cache is suitable for storing session data.
- -
+ - Default Security Group cannot be deleted.Allow all inbound and outbound rule.
+ - Custom Security Group. Allow no inbound and allow outbound rule.
