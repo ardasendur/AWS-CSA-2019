@@ -5,8 +5,12 @@
   - Bulk retrival : 5-12 hours (cheapest option)
   - Standart retrival: 3-5 hours
   - Expeditad retrival: 1-5 minutes 
- - The AWS Certifacte Manager generates SSL certificate in transit , not at rest.
- - Amazon Redshift Enhanced VPC provides VPC resources access Redshift.
- - DynamoDB and Elastic-cache is suitable for storing session data.
- - Default Security Group cannot be deleted.Allow all inbound and outbound rule.
- - Custom Security Group. Allow no inbound and allow outbound rule.
+- The AWS Certifacte Manager generates SSL certificate in transit , not at rest.
+- Amazon Redshift Enhanced VPC provides VPC resources access Redshift.
+- DynamoDB and Elastic-cache is suitable for storing session data.
+- Default Security Group cannot be deleted.Allow all inbound and outbound rule.
+- Custom Security Group. Allow no inbound and allow outbound rule.
+- AWS Workspace is  a fully managed ,secure desktop computing service which runs ont he AWS cloud.
+- Workspace is acloud based virtul desktop that can act as a replacement for a traditional desktop.
+- AWS Trusted advisor inspects the AWS environment to make recommendations for system performance, saving money,availability.
+- AWS Trusted advisor : Secuirty, Cost Optimization, Falut Tolerance , Performance and Service Limit.
