@@ -91,7 +91,7 @@ and deletion of EBS snapshots but not the individual files within an EBS volume.
 - Unstructed data EMR
 - Redshift composed of leader node and compute node.(Leader nodes are free)
 - Compute nodes can be On-demand or Reserved (NO Spot instance)
-- Redshift supoort only single A-Z deployment.
+- Redshift support only single A-Z deployment.
 - Redshift always store at least 3 copies of data.
 - Redshift support automated backups of the data warehouse cluester with 1 day retention period 
 by default. It can be extened max 35 days.Automated backup can be  disabled by setting retention period 0 days.
