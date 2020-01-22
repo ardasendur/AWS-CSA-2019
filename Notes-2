@@ -14,3 +14,6 @@
 - Workspace is acloud based virtul desktop that can act as a replacement for a traditional desktop.
 - AWS Trusted advisor inspects the AWS environment to make recommendations for system performance, saving money,availability.
 - AWS Trusted advisor : Secuirty, Cost Optimization, Falut Tolerance , Performance and Service Limit.
+- for routing to RDS instance CNAME with no alias.
+- for routing to S3 // elastic load balancer user  A record with alias.
+- alias support  these services ; API Gateway, Cloud Front,Elb,S3 bucker static website , VPC interface endpoint.
