@@ -1,0 +1,26 @@
+- To automatically trigger pipeline with changes in the source S3 bucket, amazon Cloud Watch Events rule & Aws Cloud trail must be applied.
+ when there are is a change in S3 bucket , events are filtered using AWS Cloud Watch events are used to trigger the start of pipeline.
+ (Webhooks are used to trigger pipeline when the source  is Github repository)
+- Placement group is used for low latency access between EC2 instances.
+- VPN Connections provides data is encrpted in transit network between VPC and on -premise .
+- AWS Direct connect does not provide encrpted traffic in connections between AWS VPC and On -premises network.
+- AWS VPC peering support accross different region.
+- CloudHSM is a cloud based hardware security module.
+- CloudHSM enables you to easily generate and use your own encrption keys on the AWS Cloud.
+- To enable access to from internet for instance in  a VPC subnet
+  - > Attach internet gw to ypur VPC
+  - > Ensure that subnet  route table points to the IGW
+  - > Ensure that instance have a globally uniqiue Ip Address (public ipv4, Elastic Ip)
+- Default NACL rules will allow all traffic.  
+- AWS Shield for DDoS mitigation.
+- Lambda@Edge to run costum code close to ypur viewer.
+- Hosted Zone is a container for records.A hosted zone and the correspondig domain have the same name. We have two type of hosted zones.
+  public hosted zone: contain records that specify how you want to route traffic on the internet.
+  private hosted zone: route traffic in an Amazon VPC.
+- An alias record contains a pointer to AWS resources such as CF or amazon S3 bucket.
+- Network Load Balancer can be used to terminate TLs connections instead of back end instance reducing load on instance.
+- NLB does not support custom security policy.
+- When an EC2 instances is in Hibernate state(suspend-to-disk), you caqn pay only for the EBS volumes and Elastic Ip addressess attacthed to it.
+- When you hibarnate an instance , Hibarnation saves the content from the memory(RAM) to Amazon EBs snapshot. 
+- The hibernation freezes all of the processes,saves the content of the RAM to the EBS root volume and performs regular shutdown.
+
