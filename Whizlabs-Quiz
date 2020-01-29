@@ -45,4 +45,13 @@
 - Amazon Kinesis makes it easy to collect ,process and analyze real-time ,streaming data.
 - Redshift cluster : support cross-region snapshots for disaster recovery.
 - EBS Volumes are replicated within their Availability zones.
-
+- EBS volume locked in AZ . It means that you have EC2 instance in us-east-1 and attached 10 Gb EBS volume , you cannot attach EBS volume
+EC2 which is located from us-west-1.
+- Only gpd and io ssd used for boot volume.
+- EBS snapshots are incremental and store in S3.
+- EBS snapshots can be automated by using Amazon Data lifecycle manager.(You can create lifecycle policy for snapshots)
+- Instance store is pyhsically attached machine.(EBS is a network drive)
+- Instance store best suit for better performance for I/O (Caches)
+- You can lost the the data when instance stop or terminate.
+- EBS Volumes can be attached one instance at a time (Think as usb stick)
+- Alias free to charge.
