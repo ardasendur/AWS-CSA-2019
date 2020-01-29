@@ -2,8 +2,8 @@
  when there are is a change in S3 bucket , events are filtered using AWS Cloud Watch events are used to trigger the start of pipeline.
  (Webhooks are used to trigger pipeline when the source  is Github repository)
 - Placement group is used for low latency access between EC2 instances.
-- VPN Connections provides data is encrpted in transit network between VPC and on -premise .
-- AWS Direct connect does not provide encrpted traffic in connections between AWS VPC and On -premises network.
+- VPN Connections provides data is encrypted in transit network between VPC and on -premise .
+- AWS Direct connect does not provide encrypted traffic in connections between AWS VPC and On-premises network.
 - AWS VPC peering support accross different region.
 - CloudHSM is a cloud based hardware security module.
 - CloudHSM enables you to easily generate and use your own encrption keys on the AWS Cloud.
@@ -19,8 +19,30 @@
   private hosted zone: route traffic in an Amazon VPC.
 - An alias record contains a pointer to AWS resources such as CF or amazon S3 bucket.
 - Network Load Balancer can be used to terminate TLs connections instead of back end instance reducing load on instance.
+- When you create a TLS listener, you must select a security policy.
 - NLB does not support custom security policy.
-- When an EC2 instances is in Hibernate state(suspend-to-disk), you caqn pay only for the EBS volumes and Elastic Ip addressess attacthed to it.
+- When an EC2 instances is in Hibernate state(suspend-to-disk), you can pay only for the EBS volumes and Elastic Ip addressess attacthed to it.
 - When you hibarnate an instance , Hibarnation saves the content from the memory(RAM) to Amazon EBs snapshot. 
 - The hibernation freezes all of the processes,saves the content of the RAM to the EBS root volume and performs regular shutdown.
+- EBS volume takes snapshot then create  new volume in other AZ
+- IAM roles are designed to make application securely API calls.
+- ECS has two modes: Fargate launch type and Ec2 launch type.
+- You can back up data on Amazon EBS volumes to amazon s3 by taking point-in -time snaphots.Snapshots are incremental backups.
+   Incremental backups means only the blocks on the device that have changed after most recent snapshot are saved. Aim of incremental backup
+   is to prevent store duplicating data.
+- Snapshots need to be available in another region for disaster recovery purpose.
+- Amazon Data Lifecycle Manager can be used for creation,retention & deletion of EBS snapshots.
+- To get private and public Ip  of Ec2 instance http://169.254.169.254/latest/meta-data/local-ipv4
+- Cluster placement group are recommended for app that benefits from low latency, high network throughput.
+- When EC2 runnig tt ohibernate state, there is no change in Private IPv4 & IPv6. Change in public ipv4 and ipv6.
+- AWS recommeds that for small workloads Genereal purpose SSD volume 
+- No longer have to randomize prefix for naming for performance and can use sequential data-based naming for prefix for object.
+- If you need low latency access to your entire dataset, first configure your on-premises gateway to store all yor data locally.
+- Stored volume : if you need low-latency access to your entire data set. First configure your on-premises gateway to store all your data locally.
+- Cached volume : cached volumes offer low-latency access to your frequently accessed data.
+- To provide secure access for redis  cluster : redis AUTH mus be enabled.
+- For Redis auth, clusters must be enabled with in-transit encryption during initial deployment, not at rest  encryption.
+- Amazon Kinesis makes it easy to collect ,process and analyze real-time ,streaming data.
+- Redshift cluster : support cross-region snapshots for disaster recovery.
+- EBS Volumes are replicated within their Availability zones.
 
