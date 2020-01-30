@@ -36,7 +36,7 @@
 - Cluster placement group are recommended for app that benefits from low latency, high network throughput.
 - When EC2 runnig tt ohibernate state, there is no change in Private IPv4 & IPv6. Change in public ipv4 and ipv6.
 - AWS recommeds that for small workloads Genereal purpose SSD volume 
-- No longer have to randomize prefix for naming for performance and can use sequential data-based naming for prefix for object.
+- No longer have to randomize prefix for naming for performance and can use sequential date-based naming for prefix for object.
 - If you need low latency access to your entire dataset, first configure your on-premises gateway to store all yor data locally.
 - Stored volume : if you need low-latency access to your entire data set. First configure your on-premises gateway to store all your data locally.
 - Cached volume : cached volumes offer low-latency access to your frequently accessed data.
@@ -48,6 +48,12 @@
 - EBS volume locked in AZ . It means that you have EC2 instance in us-east-1 and attached 10 Gb EBS volume , you cannot attach EBS volume
 EC2 which is located from us-west-1.
 - Only gpd and io ssd used for boot volume.
+- Disaster Recovery : Backup Restore, Pilot Light, Warm Standby, Multi-site
+- Backup Restore : Slowest and cheap DR plan.
+- Pilot Light : Active/Passive failover.Most critical of element in system is running.
+- Warm Standby : A scaled down of a fully functional enviroment is always running in cloud.
+- Multi-site : This DR plan is the fastest in system restoration during DR event.One copy of your infrastructure thast is located from
+in another region or AZ. Active-Active configuration. Most expensive DR plans.
 - EBS snapshots are incremental and store in S3.
 - EBS snapshots can be automated by using Amazon Data lifecycle manager.(You can create lifecycle policy for snapshots)
 - Instance store is pyhsically attached machine.(EBS is a network drive)
@@ -55,3 +61,7 @@ EC2 which is located from us-west-1.
 - You can lost the the data when instance stop or terminate.
 - EBS Volumes can be attached one instance at a time (Think as usb stick)
 - Alias free to charge.
+- You manage your DB engine configuration(max_connections, max_user_connections,port,socket) through the use of parameters in DB parameter group.DB parameter groups act as a container
+for engine configuration values that are applied to one or more DB instances.
+- AWS Direct Connect can be user for loading data form on premises network to AWS.
+
