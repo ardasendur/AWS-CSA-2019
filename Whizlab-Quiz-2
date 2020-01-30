@@ -1,0 +1,9 @@
+- The Web servers can be in the Private subnet since the communication between instance and ELB happens via the private IP.
+    this approach provides better security for the Web Server.
+- There is no requirement for ec2 instance to be in public subnet as route 53 route the equest to elb whose endpoint is exposed lb is in 
+public subnet and the communivation between elb and ec2 instance happen via private ip (better security purpose)
+- Consolidate Billing combines the usage of all Accounts within organizations & shares Reserved Instances between multiple accounts.
+- Reserved Instance to be used by other accounts in the same organizations.Instance should be launched in the same A-Z and should not be
+part of same VPC.
+- AWS CodePipeline can be used to automate the release process for building ,testing and deploying code based on the release process model.
+- Launch Amazon RDS instance outside AWS Elastic Beanstalk environment storing the connection string in S3 bucket.
