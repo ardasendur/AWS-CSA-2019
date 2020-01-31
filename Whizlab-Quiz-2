@@ -7,3 +7,19 @@ public subnet and the communivation between elb and ec2 instance happen via priv
 part of same VPC.
 - AWS CodePipeline can be used to automate the release process for building ,testing and deploying code based on the release process model.
 - Launch Amazon RDS instance outside AWS Elastic Beanstalk environment storing the connection string in S3 bucket.
+- CodeCommit: Service where you store the code (Similar Github)
+- CodeBuild: build and testing service in your CICD
+- CodeDeploy: deploy and packaged code oto EC2 and AWS Lambda
+- SSO (Single Sign On)
+- Step Functions: Coordinate Lambda functions and ECS containers into workflow.
+- Glue: ETL service on AWS
+- Workspaces: Virtual desktop  demand in the cloud.
+- AWS Config: Config continiously monitor and records your AWS resource configurations and allows you to automate the evaluation 
+of recored configuration agaisnt desired configuration..
+- Direct connection guarantees great performance and security ( as the connection private)
+- Lambda timeout after 15 minutes.
+- Network Load Balancer expose a fixed Ip to the public web. Appication and CLB exposed fixed DNS(=URL) 
+- To generate pre-signed URL  we must code , and Lambda is the perfect tool for running that code on the fly.
+- With SSE-C, client proivde encrption key but let AWS do the encrption.
+- Path based and host based roting only available for ALB
+- Neptune -graph database.
