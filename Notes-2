@@ -18,4 +18,8 @@
 - for routing to S3 // elastic load balancer user  A record with alias.
 - alias support  these services ; API Gateway, Cloud Front,Elb,S3 bucker static website , VPC interface endpoint.
 - Network load balancer does not support stick session, WAF.
+- Redshift composed of leader node and compute nodes.
+- Redshit specturum: No need to load data redshift, querying data from s3.
 - Use NLB for TCP-UDP-TLd and TCP+UDP ( They are both layer 4)
+- Cost for Redshift is not depend on number of query (Athena),it is related to provisioning.
+- Redshift only support single A-Z deployments and the nodes are available only same A-z
