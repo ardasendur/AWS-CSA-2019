@@ -1,7 +1,7 @@
 - The Web servers can be in the Private subnet since the communication between instance and ELB happens via the private IP.
     this approach provides better security for the Web Server.
-- There is no requirement for ec2 instance to be in public subnet as route 53 route the equest to elb whose endpoint is exposed lb is in 
-public subnet and the communivation between elb and ec2 instance happen via private ip (better security purpose)
+- There is no requirement for ec2 instance to be in public subnet as route 53 route the request to elb whose endpoint is exposed lb is in 
+public subnet and the communication between elb and ec2 instance happen via private ip (better security purpose)
 - Consolidate Billing combines the usage of all Accounts within organizations & shares Reserved Instances between multiple accounts.
 - Reserved Instance to be used by other accounts in the same organizations.Instance should be launched in the same A-Z and should not be
 part of same VPC.
@@ -18,8 +18,8 @@ part of same VPC.
 of recored configuration agaisnt desired configuration..
 - Direct connection guarantees great performance and security ( as the connection private)
 - Lambda timeout after 15 minutes.
-- Network Load Balancer expose a fixed Ip to the public web. Appication and CLB exposed fixed DNS(=URL) 
+- Network Load Balancer expose a fixed IP to the public web. Appication and CLB exposed fixed DNS(=URL) 
 - To generate pre-signed URL  we must code , and Lambda is the perfect tool for running that code on the fly.
-- With SSE-C, client proivde encrption key but let AWS do the encrption.
+- With SSE-C, client provide encrption key but let AWS do the encrption.
 - Path based and host based roting only available for ALB
 - Neptune -graph database.
