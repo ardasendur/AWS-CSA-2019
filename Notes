@@ -107,4 +107,13 @@ AWS account.
 internet traffic. It means that they can be source or destination. 
 - NAT instace must have Elastic IP.
 - NAT instance should be placed in public subnet.
-
+- SQL scales vertically , NoSQL scales horizontally(->)
+- SQL table based, NoSQL document based.
+- SQL - ACID , NoSQL - CAP
+- RDS instances not support ssh.
+- RDS read replicas - async up to 5 replica, eventually consistent
+- RDS encrption at rest done when you first create the DB.
+- Redis persistance  , supports read replica and multi a-z failover
+- Redis user session and leader board gaming.
+- Aurora support auto-healing.
+- Elastic cache no need IAM authantication
