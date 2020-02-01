@@ -22,4 +22,6 @@
 - Redshit specturum: No need to load data redshift, querying data from s3.
 - Use NLB for TCP-UDP-TLd and TCP+UDP ( They are both layer 4)
 - Cost for Redshift is not depend on number of query (Athena),it is related to provisioning.
-- Redshift only support single A-Z deployments and the nodes are available only same A-z
+- Redshift only support single A-Z deployments and the nodes are available only same A-Z
+- KMS can only help encrpting up to 4 KB of data per call.
+- If data > 4 KB ,use envelope encryption
