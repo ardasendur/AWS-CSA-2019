@@ -23,3 +23,6 @@ of recored configuration agaisnt desired configuration..
 - With SSE-C, client provide encrption key but let AWS do the encrption.
 - Path based and host based roting only available for ALB
 - Neptune -graph database.
+- Automated backup  for RDS storage volume of entire DB.AWS performs storage volume snapshot daily basis.
+- Database snapshots are performed by manual not managed by AWS.
+- DB snapshots perfomed by user any time .
