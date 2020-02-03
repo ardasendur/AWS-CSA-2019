@@ -1,0 +1,15 @@
+- If  I/0 operation is random and sequential gp2 and io1 SSD.
+- If  I/O operations are large and sequential HDD.
+- SSD small and random operation.
+- HDD large and sequential.
+- SSD large database  , HDD big data , data warehouse and log processing.
+- Reserved instance provide you crucial discount up to 75% compared with On-Demand instace pricing.
+- Flexibility to change families ,Os type and tenancies  when you are using Convertible RI.
+- You can sell your unsude RI in RI Marketplace.
+- only Convertable Reserved Instances can be exchanged for other Convertiable RI.
+- Use signed cookies : 
+   - You want to provide access to multiple restricted files for example: all of the files for a video in HLS format. 
+   - You dont want to change your current url 
+ - Signed url is appropriate for individual file
+ - In  Amazon Redshift, you use workload management (WLM) to define number of query queues that are available 
+ and how queries are routed to those. WLM is part of parameter group configuration. 
