@@ -1,4 +1,5 @@
-- If  I/0 operation is random and sequential gp2 and io1 SSD.
+- Question 54 check !!!1
+- If  I/0 operation is random and small gp2 and io1 SSD.
 - If  I/O operations are large and sequential HDD.
 - SSD small and random operation.
 - HDD large and sequential.
@@ -13,3 +14,15 @@
  - Signed url is appropriate for individual file
  - In  Amazon Redshift, you use workload management (WLM) to define number of query queues that are available 
  and how queries are routed to those. WLM is part of parameter group configuration. 
+ - AWS Budget set the custom budget that alert you when your costs or usage exceeed or forecasting your exceed. 
+- Use budgets to manage your budgets for your account
+- Cost exploler tracks and analyzes your AWS account.
+- Low latency response to high traffic queries - Nosql
+- HVM AMI is for enhanced networking and provide higher I/O performance.
+-  web identity federation is primarily used to let users sign in via a well-known external identity provider (IdP), such as Login with Amazon, Facebook, Google. 
+It does not utilize Active Directory.
+-As a best practice, create a trail that applies to all regions in the AWS partition in which you are working. 
+This is the default setting when you create a trail in the CloudTrail console.
+- Redshift Spectrum is primarily used to run queries against exabytes of unstructured data in Amazon S3, 
+with no loading or ETL required.
+- 
