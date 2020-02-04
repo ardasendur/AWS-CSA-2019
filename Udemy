@@ -1,9 +1,9 @@
-- Question 54 check !!!1
+- Question 54 check !!!
 - If  I/0 operation is random and small gp2 and io1 SSD.
 - If  I/O operations are large and sequential HDD.
 - SSD small and random operation.
 - HDD large and sequential.
-- SSD large database  , HDD big data , data warehouse and log processing.
+- SSD large database , HDD big data , data warehouse and log processing.
 - Reserved instance provide you crucial discount up to 75% compared with On-Demand instace pricing.
 - Flexibility to change families ,Os type and tenancies  when you are using Convertible RI.
 - You can sell your unsude RI in RI Marketplace.
@@ -25,4 +25,50 @@ It does not utilize Active Directory.
 This is the default setting when you create a trail in the CloudTrail console.
 - Redshift Spectrum is primarily used to run queries against exabytes of unstructured data in Amazon S3, 
 with no loading or ETL required.
-- 
+- Direct connect enables you to establish a private and dedicated network connection between your network and VPC.
+- VPN provides a cost-effective hybrid connection between from ypur VPC to your on-premises. It does not by passes the public internet.
+AWS direct connect connection which has a direct and dedicated connection to ypur on-premises network.
+- VPN allows you to connect your AWS resources to data center with IpSec and TLS tunnels.
+ - If you require external signal(decider) or human intervention or you would like to launch child process that return 
+ a result yo a parent  consider Amazon SWF.
+ - In cases where your EC2 instance cannot be accessed form Interner check two things: 
+     1-) Does it have public ip address or EIP?
+     2-) Is the route table properly configured?
+-  Amazon SQS is the best solution to avoid having lost messages.
+- Cluster placement group for EC2 low -latency network.
+- You are limited to running up to total of 20 on demand , 20 resvered and spot instance per region
+- The largest object that can be uploaded in a single put is 5GB.
+- Object size > 100 MB - multipart upload, and object size 0 to 5TB
+-  Amazon S3 does not currently support Object Locking.
+-Keep in mind that an EC2 instance has an underlying physical host computer. 
+If the instance is stopped, AWS usually moves the instance to a new host computer
+- Data retrieval for Glacier : retrieval policies and provisioned capacity.
+- Provisioned Capacity ensures that retrival capacity for Expedited retrievals is available when you need it.
+-  Bulk retrievals typically complete within 5–12 hours. 
+- Standard retrievalas for 3-5 hours.
+- Amazon S3 Transfer Acceleration enables fast, easy, and 
+secure transfers of files over long distances between your client and your Amazon S3 bucket.
+- DDOs attacks mitigation tecniques:
+   1- Use AWS shield(DDos protection service) and waf
+   2- Setup alerts in Amazon Cloudwatch to look for high Network In and cpu utilization metrics.
+   3- DB instances in private subnets.
+   4- Use an Amazon CloudFront service for distributing both static and dynamic content.
+- multiple elastic network interfaces (ENIs) to each EC2 instance to increase 
+the network bandwidth is mainly done for performance improvement
+- Lambda monitoring graph: Invocations,Duration,IteratorAge,DeadLetterErrors, Error count and success rate.
+- by default, ASG is not enabled in DynamoDB table which is created using AWS CLI.
+- Active-Active Failover (resources to be available the majority of the time)
+- You are limited to running up to a total of 20 On-Demand instances across the instance family, purchasing 20 Reserved Instances,  
+and requesting Spot Instances per your dynamic Spot limit per region.
+-  Amazon EMR for analyzing the log files.
+- Read replica do not do  anything to upgrade or increase the read througput on the primary DB instance.
+- Read replica increasing aggregate read throughput.
+- If your VPC does not have sufficient ENIs or subnet IPs, your Lambda function will not scale as requests increase, 
+and you will see an increase in invocation errors with EC2 error types like EC2ThrottledException. 
+- Lambda function will not scale as requests increase, 
+and you will see an increase in invocation errors with EC2 error types like EC2ThrottledException.
+- Each subnet maps to  a single A-Z.
+- Every subnet that you create is automatically associated with main table for the VPC.
+- EC2 instance in a private sybnet can communicate with Internet not just EIP , but also public IP.
+- RDS is just managed service and not fully managed.
+- Reserved instances that applied to terminated instances are still billed. 
