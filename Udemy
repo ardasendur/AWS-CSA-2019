@@ -71,4 +71,24 @@ and you will see an increase in invocation errors with EC2 error types like EC2T
 - Every subnet that you create is automatically associated with main table for the VPC.
 - EC2 instance in a private sybnet can communicate with Internet not just EIP , but also public IP.
 - RDS is just managed service and not fully managed.
-- Reserved instances that applied to terminated instances are still billed. 
+- Reserved instances that applied to terminated instances are still billed.
+- Amazon Glacier Deep ARchive is mainly used for data archieve and times that can takes more than 12 hours.
+- DynamoDB is single-digit millisecond latency at any scale. 
+- Using Amazon CloudWatch alarm actions, 
+you can create alarms that automatically stop, terminate, reboot, or recover your EC2 instances.
+- You don't need a Secondary Private IP Address since this address is only 
+used when communicating within your VPC
+- Instance is using RAID configuration, the snapshot process is  different.You should stop all I/O activities before creating snapshot.
+  Process is described below: 
+      1-) Stop all applications from writing to the RAID array.
+      2-) Flush all caches to the disk.
+      3-) Confirm that the associated EC2 instance is no longer writing to the RAID array by taking actions such as freezing the file system, 
+      unmounting the RAID array, or even shutting down the EC2 instance.
+      4-) After taking steps to halt all disk-related activity to the RAID array, take a snapshot of each EBS volume in the array.
+- One of the best practices in Amazon IAM is to grant least privilege.
+- AWS Storage gateway and Amazon Glacier data is encrpted at rest.
+- Data stored in Amazon Glacier is protected by default; only vault owners have access to the Amazon Glacier resources they create.
+- SSL/TLS is commonly used when you have sensitive data travelling through the public network.(CloudFront and Elastic Load Balancing)
+-  AWS Shared Responsibilites Model Security of cloud versus security in cloud
+
+
