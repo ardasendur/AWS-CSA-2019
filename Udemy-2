@@ -1,0 +1,37 @@
+Here is a list of important information about EBS Volumes:
+- When you create an EBS volume in an Availability Zone, it is automatically replicated
+within that zone to prevent data loss due to a failure of any single hardware component.
+- An EBS volume can only be attached to one EC2 instance at a time.
+- After you create a volume, you can attach it to any EC2 instance in the same Availability Zone
+- An EBS volume is off-instance storage that can persist independently from the life of an instance.
+You can specify not to terminate the EBS volume when you terminate the EC2 instance during instance creation.
+- EBS volumes support live configuration changes while in production 
+which means that you can modify the volume type, volume size, and IOPS capacity without service interruptions.
+- Amazon EBS encryption uses 256-bit Advanced Encryption Standard algorithms (AES-256)
+- EBS Volumes offer 99.999% SLA.
+ - You should use SNS instead of SES (Simple Email Service) when you want to monitor your EC2 instances.
+ - You pay only for the API calls you receive and the amount of data transferred out.
+ - Multiple domains to serve SSL traffic over the same IP address.
+ - Classic load balancer does not support SNI but application load balancer support SNI.
+ - ALB or  Cloud Front web distribution to allow SNI feature.
+ - You only need to enable Cross-Origin Resource Sharing (CORS) when your client 
+ web application on one domain interacts with the resources in a different domain.
+ - When it's is runnig (hot attach) (ENI)
+ - When it is stopping (warm attach) (ENI)
+ - When the instance is being launched (cold attach) (ENI)
+ - Amazon S3 supports the following destinations where it can publish events:Lambda,SNS,SQS
+ - Amazon Cognito service is primarily used for user authentication and not for providing access to your AWS resources
+ - STS has the ability to provide temporary security credentials.
+ - AWS shared respobsilibities : compute,storage,databse,networking,regions,edge location,AZ
+ - Customer responsibilities : customer data,OS,platform,application, IAM
+ - VPN connection refers to the connection between your VPC and your own network.AWS support IPsec VPN connection.
+ - You don't need a NAT instance for you to be able to create a VPN connection.
+ - Massively parallel query execution and columnar storage - redshift
+ - you the ability to store huge amounts of data and perform quick and flexible queries on it -redshift
+ - Warm standby DR is a meyhod of redudancy in which the scaled down secondary system in the background of the primary system.
+ - Using an Elastic Load Balancer is an ideal solution for adding elasticity to your application.
+ - When failing over, Amazon RDS simply flips the canonical name record (CNAME) for your DB instance to point at the standby, 
+ which is in turn promoted to become the new primary. 
+ - Default NACL : inbound: allow, outbound :allow
+ - Custom NACL : inbound : deny, outbound: deny
+ - Amazon S3 offers a highly durable, scalable, and secure destination for backing up and archiving your critical data.
