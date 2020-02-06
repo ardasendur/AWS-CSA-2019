@@ -25,3 +25,20 @@
 - Redshift only support single A-Z deployments and the nodes are available only same A-Z
 - KMS can only help encrpting up to 4 KB of data per call.
 - If data > 4 KB ,use envelope encryption
+
+  Spot instance pricing: 
+     You interrupt Spot Instance:
+     In the first hour:
+       - Charged for seconds used (Amazon Linux and Ubuntu)
+       - Charged for the hour even if you used a partial hour (Windows, SUSE, RHEL) 
+       
+    In any hour after the first hour:
+      - Charged for the seconds used (Amazon Linux and Ubuntu)
+      - Charged for the hour even if you used a partial hour (Windows, SUSE, RHEL)   
+     
+     Amazon EC2 interrupt Spor Instance:
+     In the first hour:
+        - No charge
+     After first hour:
+        - Charged for seconds use (Amazon Linux)
+        - Charged up to the last full hour, no partial hour(Windows,SUSE etc)
