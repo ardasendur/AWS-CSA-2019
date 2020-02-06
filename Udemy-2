@@ -45,4 +45,15 @@ which means that you can modify the volume type, volume size, and IOPS capacity 
   (RDS child processes,RDS process, OS process)
   - SSL/TLS certifacte import - AWS Certificate Manager ,IAM certificate store
   - If you got your certificate from a third-party CA, import the certificate into ACM or upload it to the IAM certificate store.
+  - AWS x-ray to trace and analyze your user requests as they travel through your Amazon gateway API
+  - X-Ray gives you an end-to-end view of an entire request, so you can analyze latencies in your APIs and their backend services
+  - CloudTrail is primarily used for API logging of all of your AWS resources.
+  - VPC Flow Logs is a feature that enables you to capture information about the IP traffic going to and from network interfaces in your entire VPC.
+  -  A virtually unlimited amount of object data without any effort to scale when demand unexpectedly increases - S3
+  -  By default, each workflow execution can run for a maximum of 1 year in Amazon SWF
+  - status is insufficient-data, the checks may still be in progress on the volume (EBS)
+  - If all checks pass, the status of the volume is ok (EBS)
+  - EMR does not provide the ability to process your data in real-time, unlike Kinesis
+  - S3 ACL are primarily used to grant basic read/write permissions to AWS accounts not suitable for providing access over the Internet.
+  - S3 bucket policy is sutiable for readin publicly all over the Internet
   
