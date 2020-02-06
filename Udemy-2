@@ -35,3 +35,14 @@ which means that you can modify the volume type, volume size, and IOPS capacity 
  - Default NACL : inbound: allow, outbound :allow
  - Custom NACL : inbound : deny, outbound: deny
  - Amazon S3 offers a highly durable, scalable, and secure destination for backing up and archiving your critical data.
+ - Failover is automatically handled by Amazon RDS so that you can resume database operations as quickly as possible without administrative intervention. When failing over, Amazon RDS simply flips the canonical name record (CNAME) in Route53 for your DB instance to point at the standby, 
+ which in turn is promoted to become the new primary.
+- Amazon S3 assembles these parts and creates the object. In general, when your object size reaches 100 MB, you should consider using multipart uploads instead of uploading the object in a single operation.
+- Lambda@Edge is a feature of Amazon CloudFront that lets you run code closer to users of your application, which improves performance and reduces latency.
+- Real time streaming data - >Kinesis
+- Amazon RDS DB instances enhanced monitoring : RDS provides metrics in real time for the OS that your DN instaces runs on.
+- Enhanced Monitoring metrics are useful when you want to see how different processes or threads on a DB instance use the CPU.
+  (RDS child processes,RDS process, OS process)
+  - SSL/TLS certifacte import - AWS Certificate Manager ,IAM certificate store
+  - If you got your certificate from a third-party CA, import the certificate into ACM or upload it to the IAM certificate store.
+  
