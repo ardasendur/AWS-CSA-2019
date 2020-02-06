@@ -1,0 +1,24 @@
+With web identity federation, you don't need to create custom sign-in code
+or manage your own user identities. 
+Instead, users of your app can sign in using a well-known 
+identity provider (IdP) —such as Login with Amazon, Facebook, Google,
+or any other OpenID Connect (OIDC)-compatible IdP, receive an authentication token, 
+and then exchange that token for temporary security credentials in AWS that map to 
+an IAM role with permissions to use the resources in your AWS account. Using an IdP helps you keep your AWS account
+secure because you don't have to embed and distribute long-term security credentials with your application.
+
+
+S3 Versioning: 
+-Versioning enables you to control which file a request returns even when the user has a version cached either locally or behind a corporate caching proxy. If you invalidate the file, the user might continue to see the old version until it expires from those caches.
+-CloudFront access logs include the names of your files, so versioning makes it easier to analyze the results of file changes.
+-Versioning provides a way to serve different versions of files to different users.
+-Versioning simplifies rolling forward and back between file revisions.
+-Versioning is less expensive. You still have to pay for CloudFront to transfer new versions of your files to edge locations, but you don't have to pay for invalidating files.
+
+Enhanced networking provides higher bandwidth, 
+higher packet per second (PPS) performance, and consistently lower inter-instance latencies. 
+There is no additional charge for using enhanced networking.
+
+Access Keys needed to make API calls to the AWS resources.
+distributed session management layer -elastic cache
+
