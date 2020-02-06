@@ -117,3 +117,23 @@ internet traffic. It means that they can be source or destination.
 - Redis user session and leader board gaming.
 - Aurora support auto-healing.
 - Elastic cache no need IAM authantication
+- Scheduled Instances are a good choice for workloads that do not run continuously, but do run on a regular schedule.
+- You can connect your VPC to remote networks by using a VPN connection which can be Direct Connect, IPsec VPN connection, 
+AWS VPN CloudHub, or a third party software VPN appliance.
+- The recommended storage engine for MySQL is InnoDB and not MyISAM.
+An Elastic IP address doesn’t incur charges as long as the following conditions are true:
+  -The Elastic IP address is associated with an Amazon EC2 instance.
+  -The instance associated with the Elastic IP address is running.
+  -The instance has only one Elastic IP address attached to it.
+  
+- Service Control Policy  with Aws organization
+- AWS organization helps us to manage multiple aws account .
+- cross-account access to each department, this entails a lot of configuration compared with using AWS Organizations and Service Control Policies (SCPs). Cross-account access would be a more suitable choice
+if you only have two accounts to manage, but not for multiple accounts.
+- AWS hosts a variety of public datasets that anyone can access for free.
+
+
+
+
+
+
