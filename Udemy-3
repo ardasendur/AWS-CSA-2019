@@ -32,4 +32,12 @@ Identity Broker: OpneId SAML Cognito - exhange token with STS
 
 Enhanced Monitoring metrics are useful when you want to see how different processes or threads on a DB instance use the CPU.
 
- 
+In this example, it is called enterprise identity federation considering that you also need to set up a single sign-on (SSO) capability.
+
+The correct answers are:
+
+- Setup a Federation proxy or an Identity provider
+
+- Setup an AWS Security Token Service to generate temporary tokens (Option 2)
+
+- Configure an IAM role (Option 4)  
