@@ -30,3 +30,6 @@ Identity Pool : Actual granting  AWS resources.Provides AWS credential to access
 Identity provider: Hold the cedentials. it is a database of users and password such as LDAP active Directory...
 Identity Broker: OpneId SAML Cognito - exhange token with STS
 
+Enhanced Monitoring metrics are useful when you want to see how different processes or threads on a DB instance use the CPU.
+
+ 
