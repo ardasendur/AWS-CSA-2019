@@ -22,3 +22,11 @@ There is no additional charge for using enhanced networking.
 Access Keys needed to make API calls to the AWS resources.
 distributed session management layer -elastic cache
 
+
+User pool :  User directories 
+Identity Pool : Actual granting  AWS resources.Provides AWS credential to access  AWS resources S3 etc. 
+
+
+Identity provider: Hold the cedentials. it is a database of users and password such as LDAP active Directory...
+Identity Broker: OpneId SAML Cognito - exhange token with STS
+
