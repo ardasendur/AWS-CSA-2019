@@ -56,4 +56,5 @@ which means that you can modify the volume type, volume size, and IOPS capacity 
   - EMR does not provide the ability to process your data in real-time, unlike Kinesis
   - S3 ACL are primarily used to grant basic read/write permissions to AWS accounts not suitable for providing access over the Internet.
   - S3 bucket policy is sutiable for readin publicly all over the Internet
+  - EBS is lowest-latency access to data from a single EC2 instance.
   
