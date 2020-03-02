@@ -1,0 +1,5 @@
+docker proxy configuration: 
+ - Create a /etc/sytemd/system/docker.service.d/http-proxy.conf
+ - systemctl daemon-reload
+ - systemctl restart docker
+ - Check docker info proxy part.
