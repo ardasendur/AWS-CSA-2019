@@ -8,7 +8,7 @@ docker proxy configuration:
   https://carlos.mendible.com/2018/08/10/installing-azure-cli-and-ansible-on-ubuntu/
 
 
-tee command 
+tee command  - stdout and output of command write file 
 
 
 - Linux Terminal short-cut 
