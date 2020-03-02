@@ -3,7 +3,15 @@ docker proxy configuration:
  - systemctl daemon-reload
  - systemctl restart docker
  - Check docker info proxy part.
- 
- 
+
  - Azure cli installation: 
   https://carlos.mendible.com/2018/08/10/installing-azure-cli-and-ansible-on-ubuntu/
+
+
+tee command 
+
+
+- Linux Terminal short-cut 
+  CTRL + L clear all terminal  screeen
+  CTRL + U this shortcut erases everything from the current cursor position to the beginning of the line.
+  CTRL + A 
