@@ -3,3 +3,7 @@ docker proxy configuration:
  - systemctl daemon-reload
  - systemctl restart docker
  - Check docker info proxy part.
+ 
+ 
+ - Azure cli installation: 
+  https://carlos.mendible.com/2018/08/10/installing-azure-cli-and-ansible-on-ubuntu/
